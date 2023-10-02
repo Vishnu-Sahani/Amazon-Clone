@@ -1,0 +1,576 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #cbc8c85e;
+}
+header{
+    height: 100px;
+    width: 100%;
+}
+main{
+    height: 1160px;
+    width: 100%;
+}
+.footer{ 
+    height: 770px;
+    width: 100%;
+    
+}
+/* hover */
+.box{
+    border: 2px solid transparent;
+   margin: 5px;
+
+}
+.box:hover{
+    border: 2px solid white;
+    transition: 0.3s;
+}
+/* ----------------nav-start ------------------------*/
+.nav-bar{
+    background-color: #131A22;
+    height: 60px;
+    width: 100%;
+    position:fixed;
+    display: flex;
+    z-index: 10;
+    
+}
+.nav-bar .nav-box1{
+background-position: center;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+height: 50px;
+width: 145px;
+z-index: 1;
+}
+.nav-bar .nav-box1 img{
+    background:transparent;
+    height: 65px;
+    width:120px ;
+   /* padding-top: 5px; */
+    padding-left: 4px;
+    z-index: 0;
+}
+.nav-bar .nav-box1 span{
+    color: white;
+    margin-right:10px ;
+    height: 30px;
+    width: 17px;
+    font-size: 19px;
+    padding-bottom: 5px;
+    z-index: 2;
+    
+}
+.nav-bar .nav-box2{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.nav-bar .nav-box2 #box2-left{
+    height: 60px;  
+}
+.nav-bar .nav-box2 #box2-left img{
+    height: 20px;
+    width: 20px;
+    margin-top: 27px;
+    
+}
+.nav-bar .nav-box2 #box2-right{
+    font-size: 14px;
+}
+.nav-bar .nav-box2 #box2-right #second-box2{
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+
+.nav-box3{
+    height: 40px;
+    width: 830px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.nav-box3 #select-box3{
+    height: 40px;
+    border: none;
+    width: 9%;
+    font-size: 15px;
+    background-color: #d7c9c9;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    text-align: center;
+}
+.nav-box3 #select-box3:hover{
+    background-color: #c4b5b5;
+    cursor: pointer;
+}
+.nav-box3 #search-box3{
+    height: 40px;
+    border: none;
+    width: 100%;
+}
+
+
+.nav-box3 ::placeholder{
+    padding-left: 10px;
+    font-size: 15px;
+}
+.nav-box3 #icon-box3{
+    height: 40px;
+    border: none;
+    width: 6%;
+    background-color: #c4f835e9;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-box3 #icon-box3:hover{
+    background-color: #bff922c5;
+    cursor: pointer;   
+}
+#icon-box3 img{
+    height: 36px;
+    margin: 0px; 
+}
+
+.nav-box4{
+height: 50px;
+width: 80px;
+padding: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: transparent;
+}
+.nav-box4 img{
+height: 20px;
+width: 30px;
+padding: 0px;
+}
+.nav-box4 #select-box4{
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    border: none;
+}
+
+.nav-box5{
+    height: 45px;
+    width: 135px;
+    margin-top: 10px;
+
+}
+.nav-box5 #select-box5{
+    height: 16px;
+    width: 130px;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    border: none;
+}
+.nav-box5 .p1-box5{
+    height: 16px;
+    width:130px ;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    padding-left: 4px;
+}
+.nav-box6{
+    height: 40px;
+    width: 80px;
+    margin-top: 12px;
+}
+.nav-box6 #first-box6{
+    height: 15px;
+    width:80px ;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+}
+.nav-box6 #second-box6{
+    height: 20px;
+    width: 80px;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.nav-box7{
+    height: 50px;
+    width: 80px;
+    margin: 8px;
+    display: flex;
+    
+}
+.nav-box7 img{
+    height: 40px;
+    width: 50px;
+    margin-top: 4px;
+
+}
+.nav-box7 #cart{
+    height: 20px;
+    width: 38px;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top:26px ;
+color: white;
+
+}
+/*------------------ nav - end---------------- */
+
+.panel{
+    height: 40px;
+    background-color: #232f3e;
+    position: relative;
+    top: 60px;
+    display: flex;
+    align-items: center;   
+}
+.panel .panel-left{
+    height: 35px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding-left: 25px;
+    padding-right: 20px;
+    color: white;
+    display: flex;
+}
+.panel .panel-left img{
+height: 19px;
+width: 19px;
+}
+.panel .panel-left #All{
+align-items: cent;
+font-size: 16px;
+font-weight: bolder;
+}
+.panel-mid{
+    height: 35px;
+    width: 600px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+   
+}
+.panel-mid #panel-box1{
+    height:33px;
+    width: 140px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.panel-mid #panel-box2{
+    height:33px;
+    width: 40px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel-mid #panel-box3{
+    height:33px;
+    width: 110px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel-mid #panel-box4{
+    height:33px;
+    width: 80px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel-mid #panel-box5{
+    height:33px;
+    width: 120px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel-right{
+    height:40px;
+    width: 850px;
+    color: white;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    font-size:18px ;
+    font-weight: 700;
+    margin-right: 20px;
+}
+.panel-right #panel-para{
+    height: 34px;
+    width: 220px;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+   
+}
+/*---------- panel-end------------ */
+/*-------- hero - section-------- */
+/* .main{
+    height:110rem;
+    width: 93.5rem;
+} */
+.main .hero{
+    height: 100%;
+    width: 100%;
+    background-image:url("image/bg\ image");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+
+}
+
+.main .hero .four-box{
+    height: 425px;
+    width: 100%;
+    margin-top: 310px;
+    display: flex;
+    justify-content: center;
+
+
+}
+.main .hero .four-box .hero-box1{
+    height: 400px;
+    width: 23%;
+   background-color: azure;
+   margin:0px 12px;
+}
+.main .hero .four-box .hero-box1 .heading{
+    width: 88%;
+    height: 12%;
+    color: #0f1111;
+    margin:10px 20px;
+   font-size: 21px;
+
+   font-weight: bolder;
+}
+.main .hero .four-box .hero-box1 .image{
+    height: 70%;
+    width: 88%;
+    margin:0px 20px;
+    background-color: black;
+}
+.main .hero .four-box .hero-box1 .a{
+    color: #918585;
+    font-size: 18px;
+    font-weight: 400;
+   text-decoration: none;
+   padding: 20px;
+   display: block;
+   
+}
+
+.main .hero .four-box2{
+    height: 440px;
+    width: 100%;  
+    display: flex;
+    justify-content: center;
+}
+.main .hero .four-box2 .hero-box1{
+    height: 400px;
+    width: 23%;
+   background-color: azure;
+   margin:0px 12px;
+}
+.main .hero .four-box2 .hero-box1 .heading{
+    width: 88%;
+    height: 12%;
+    color: #0f1111;
+    margin:10px 20px;
+   font-size: 21px;
+
+   font-weight: bolder;
+}
+.main .hero .four-box2 .hero-box1 .image{
+    height: 70%;
+    width: 88%;
+    margin:0px 20px;
+    background-color: black;
+}
+.main .hero .four-box2 .hero-box1 .a{
+    color: #918585;
+    font-size: 18px;
+    font-weight: 400;
+   text-decoration: none;
+   padding: 20px;
+   display: block;
+   
+}
+
+/*---------- main-end --------------*/
+/*----------- footer ---------*/
+.footer .backTop{
+    height: 50px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-color: #37475A;
+}
+.footer .backTop:hover{
+    background-color: #37475aeb;
+    cursor: pointer;
+}
+.footer .backTop a{
+   width: 100%;
+     display: flex;
+     color: white;
+     text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0px;
+}
+.footer .list{
+    height: 340px;
+    width: 100%;
+    background-color: #232F3E;
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.footer .list h4{
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 40px;
+}
+.footer .list li{
+    font-size: 14px;
+    list-style: none;
+    padding: 4px;
+    margin-left: 6px;
+}
+.footer .list li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer .bottom{
+    height: 130px;
+    width: 100%;
+    margin-top: 0.8px;
+    background-color: #232F3E;
+}
+.footer .bottom .amazon-logo{
+    height: 65px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.footer .bottom .amazon-logo img{
+    height: 60px;
+    width: 90px;
+    margin-top: 10px;
+}
+.footer .bottom .amazon-logo #lang{
+    height: 30px;
+    width: 120px;
+    font-size: 15px;
+    background: transparent;
+    color: white;
+    border-radius: 4px;
+}
+.footer .bottom .country{
+    width: 100%;
+    height: 100px;
+    color: white;
+}
+.footer .bottom .country .c-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    list-style: none;
+    gap: 20px;
+}
+.footer .bottom .country li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer .bottom2{
+    height: 170px;
+    width: 100%;
+    background-color: #131A22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+.footer .bottom2 .first-ul{
+    margin-bottom: 20px;
+}
+.footer .bottom2 .bold{
+    font-size: 14px;
+    color: white;
+}
+.footer .bottom2 li{
+    list-style: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(174, 159, 159);
+}
+.footer .bottom2 li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer .copyright{
+    height: 90px;
+    width: 100%;
+    background-color: #131A22;
+    color: white;
+}
+.footer .copyright ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding-top: 25px;
+   font-size: 15px;
+    gap: 30px;
+    list-style: none;
+}
+.footer .copyright li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer .copyright .copy{
+   text-align: center;
+   font-size: 15px;
+}
+
+
+
